@@ -1,0 +1,13 @@
+ Options -Indexes
+
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^/?$ home.php [NC,L]
+RewriteRule ^dashboard/?$ home.php [NC,L]
+RewriteRule ^orderDashboard/?$ orderDashboard.php [NC,L]
+RewriteRule ^unitDashboard/?$ unitDashboard.php [NC,L]
+RewriteRule ^fuelDashboard/?$ fuelDashboard.php [NC,L]
+RewriteRule ^home/?$ home.php [NC,L]
+ReWriteRule ^operationsKPI/?$ operationsGraphs.php
+RewriteRule ^salesDashboard/?$ salesDashboard.php [NC,L]
+RewriteRule ^dashSettings/?$ dashSettings.php [NC,L]
+RewriteRule ^admin/?$ administration.php [NC,L]

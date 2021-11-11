@@ -1,0 +1,92 @@
+body {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -18rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+  position: fixed;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+.navbar-dark{
+  color: white;
+  border: darkgrey !important;
+}
+
+.bg-dark{
+  color:white;
+}
+
+.active-option{
+  background-color: rgb(31, 30, 30) !important;
+}
+
+#sidebar-wrapper .list-group {
+  width: 18rem;
+}
+
+#page-content-wrapper {
+  margin-left: 18rem;  
+  margin-top: 63px;  
+  min-width: 0;
+  width: 100%;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#page-content-wrapper.toggled {
+  margin-left: 0rem;
+}
+
+#sidebar-wrapper {
+  margin-left: 0;
+}
+
+#wrapper{
+  margin-right: 0rem;
+
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -18rem;
+
+}
+
+.sidebar-bottom{
+  position: absolute;
+  bottom: 0;
+}
+
+#top-bar{
+  position: fixed;
+  margin-left: 18rem;  
+  padding-right: 18rem;
+  width: 100%;  
+  z-index: 999;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#top-bar.toggled{
+  position: fixed;
+  margin-left: 0rem;  
+  padding-right: 0rem;
+  width: 100% !important;  
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}

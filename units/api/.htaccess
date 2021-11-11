@@ -1,0 +1,42 @@
+RewriteEngine On # Turn on the rewriting engine
+
+# -- Unit Dashboard --#
+
+#Direct state revenue to the router.php page for processing=
+RewriteRule ^unit_status/?$ router.php?controller=$0 [NC,L]
+
+#Direct state revenue to the router.php page for processing=
+RewriteRule ^unit_idle/?$ router.php?controller=$0 [NC,L]
+
+#Direct state revenue to the router.php page for processing=
+RewriteRule ^unit_ecm_mpg/?$ router.php?controller=$0 [NC,L]
+
+#Direct state revenue to the router.php page for processing=
+RewriteRule ^unit_actual_mpg/?$ router.php?controller=$0 [NC,L]
+
+#Direct state revenue to the router.php page for processing=
+RewriteRule ^unit_expert_fuel/?$ router.php?controller=$0 [NC,L]
+
+#Direct state revenue to the router.php page for processing=
+RewriteRule ^unit_repair_symptom/?$ router.php?controller=$0 [NC,L]
+
+#Direct state revenue to the router.php page for processing=
+RewriteRule ^unit_repair_cost/?$ router.php?controller=$0 [NC,L]
+
+#Direct divisions to the router.php page for processing=
+RewriteRule ^divisions/?$ router.php?controller=$0 [NC,L]
+
+#Direct terminals to the router.php page for processing=
+RewriteRule ^terminals/?$ router.php?controller=$0 [NC,L]
+
+#Direct unit search to the router.php page for processing=
+RewriteRule ^unit_detail_get/?$ router.php?controller=$0 [NC,L]
+
+#Direct unit update to the router.php page for processing=
+RewriteRule ^unit_detail_update/?$ router.php?controller=$0 [NC,L]
+
+#Direct unit_trade to the router.php page for processing=
+RewriteRule ^unit_trade/?$ router.php?controller=$0 [NC,L]
+
+#Direct unit_trade_download to the router.php page for processing=
+RewriteRule ^unit_trade_download/?$ router.php?controller=$0 [NC,L]

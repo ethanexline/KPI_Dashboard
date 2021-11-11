@@ -1,0 +1,10 @@
+RewriteEngine On # Turn on the rewriting engine
+
+#Direct daily_revenue to the router.php page for processing
+RewriteRule ^daily_revenue/?$ router.php?controller=$0 [NC,L]
+
+#Direct daily_revenue_dedicated to the router.php page for processing
+RewriteRule ^daily_revenue_dedicated/?$ router.php?controller=$0 [NC,L]
+
+#Direct news_rss to the router.php page for processing
+RewriteRule ^news_rss/?$ router.php?controller=$0 [NC,L]

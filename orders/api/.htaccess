@@ -1,0 +1,37 @@
+RewriteEngine On # Turn on the rewriting engine
+
+#Direct orders_count to the router.php page for processing
+RewriteRule ^orders_count/?$ router.php?controller=$0 [NC,L]
+
+#Direct weekly_revenue to the router.php page for processing
+RewriteRule ^weekly_revenue/?$ router.php?controller=$0 [NC,L]
+
+#Direct weekly_revenue to the router.php page for processing
+RewriteRule ^supplemental_revenue/?$ router.php?controller=$0 [NC,L]
+
+#Direct daily_revenue to the router.php page for processing
+RewriteRule ^daily_revenue/?$ router.php?controller=$0 [NC,L]
+
+#Direct hourly_revenue to the router.php page for processing=
+RewriteRule ^hourly_revenue/?$ router.php?controller=$0 [NC,L]
+
+#Direct rate per mile to the router.php page for processing=
+RewriteRule ^rpm/?$ router.php?controller=$0 [NC,L]
+
+#Direct loaded miles to the router.php page for processing=
+RewriteRule ^loaded_miles/?$ router.php?controller=$0 [NC,L]
+
+#Direct state revenue to the router.php page for processing=
+RewriteRule ^state_revenue/?$ router.php?controller=$0 [NC,L]
+
+#Direct state revenue to the router.php page for processing=
+RewriteRule ^commodity_revenue/?$ router.php?controller=$0 [NC,L]
+
+#Direct state revenue to the router.php page for processing=
+RewriteRule ^customer_revenue/?$ router.php?controller=$0 [NC,L]
+
+#Direct divisions to the router.php page for processing=
+RewriteRule ^divisions/?$ router.php?controller=$0 [NC,L]
+
+#Direct terminals to the router.php page for processing=
+RewriteRule ^terminals/?$ router.php?controller=$0 [NC,L]

@@ -1,0 +1,8 @@
+/.idea
+*.iml
+
+/tests/resources/generated
+/tests/coverage
+/vendor
+/composer.lock
+/.php_cs.cache

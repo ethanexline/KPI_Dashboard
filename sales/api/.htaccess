@@ -1,0 +1,28 @@
+RewriteEngine On # Turn on the rewriting engine
+
+#Direct state_revenue_orig_dest to the router.php page for processing
+RewriteRule ^state_revenue_orig_dest/?$ router.php?controller=$0 [NC,L]
+
+#Direct state_rpm_orig_dest to the router.php page for processing
+RewriteRule ^state_rpm_orig_dest/?$ router.php?controller=$0 [NC,L]
+
+#Direct state_broker_orig_dest to the router.php page for processing
+RewriteRule ^state_broker_orig_dest/?$ router.php?controller=$0 [NC,L]
+
+#Direct customer_revenue to the router.php page for processing
+RewriteRule ^customer_revenue/?$ router.php?controller=$0 [NC,L]
+
+#Direct broker_revenue to the router.php page for processing
+RewriteRule ^broker_revenue/?$ router.php?controller=$0 [NC,L]
+
+#Direct rpm_by_week to the router.php page for processing
+RewriteRule ^rpm_by_week/?$ router.php?controller=$0 [NC,L]
+
+#Direct top_5_rev to the router.php page for processing
+RewriteRule ^top_5_rev/?$ router.php?controller=$0 [NC,L]
+
+#Direct divisions to the router.php page for processing
+RewriteRule ^divisions/?$ router.php?controller=$0 [NC,L]
+
+#Direct terminals to the router.php page for processing
+RewriteRule ^terminals/?$ router.php?controller=$0 [NC,L]

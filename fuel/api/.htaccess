@@ -1,0 +1,61 @@
+RewriteEngine On # Turn on the rewriting engine
+
+#Direct transaction_details to the router.php page for processing
+RewriteRule ^transaction_details/?$ router.php?controller=$0 [NC,L]
+
+#Direct transaction_list to the router.php page for processing
+RewriteRule ^transaction_list/?$ router.php?controller=$0 [NC,L]
+
+#Direct transaction_summary to the router.php page for processing
+RewriteRule ^transaction_summary/?$ router.php?controller=$0 [NC,L]
+
+#Direct transaction_download to the router.php page for processing
+RewriteRule ^transaction_download/?$ router.php?controller=$0 [NC,L]
+
+#Direct fuel_daily_cost to the router.php page for processing
+RewriteRule ^fuel_daily_cost/?$ router.php?controller=$0 [NC,L]
+
+#Direct ppg_by_day to the router.php page for processing
+RewriteRule ^ppg_by_day/?$ router.php?controller=$0 [NC,L]
+
+#Direct cost_by_state to the router.php page for processing
+RewriteRule ^cost_by_state/?$ router.php?controller=$0 [NC,L]
+
+#Direct cost_by_chain to the router.php page for processing
+RewriteRule ^cost_by_chain/?$ router.php?controller=$0 [NC,L]
+
+#Direct cost_by_terminal to the router.php page for processing
+RewriteRule ^cost_by_terminal/?$ router.php?controller=$0 [NC,L]
+
+#Direct cost_by_fuel_type to the router.php page for processing
+RewriteRule ^cost_by_fuel_type/?$ router.php?controller=$0 [NC,L]
+
+#Direct POS to the router.php page for processing
+RewriteRule ^POS/?$ router.php?controller=$0 [NC,L]
+
+#Direct fuel_v_bulk to the router.php page for processing
+RewriteRule ^fuel_v_bulk/?$ router.php?controller=$0 [NC,L]
+
+#Direct avg_gpd to the router.php page for processing
+RewriteRule ^avg_gpd/?$ router.php?controller=$0 [NC,L]
+
+#Direct avg_dpg to the router.php page for processing
+RewriteRule ^avg_dpg/?$ router.php?controller=$0 [NC,L]
+
+#Direct disc_FSBC to the router.php page for processing
+RewriteRule ^disc_FSBC/?$ router.php?controller=$0 [NC,L]
+
+#Direct terminals to the router.php page for processing
+RewriteRule ^terminals/?$ router.php?controller=$0 [NC,L]
+
+#Direct divisions to the router.php page for processing
+RewriteRule ^divisions/?$ router.php?controller=$0 [NC,L]
+
+#Direct states to the router.php page for processing
+RewriteRule ^states/?$ router.php?controller=$0 [NC,L]
+
+#Direct years to the router.php page for processing
+RewriteRule ^years/?$ router.php?controller=$0 [NC,L]
+
+#Direct chains to the router.php page for processing
+RewriteRule ^chains/?$ router.php?controller=$0 [NC,L]

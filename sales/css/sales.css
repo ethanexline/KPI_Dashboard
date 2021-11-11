@@ -1,0 +1,147 @@
+.p-3 {
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.col-md-6, .col-md-4, .col-md-3 {
+  min-width: 350px !important;
+  padding-bottom: 10px;
+}
+
+.js-plotly-plot, .plot-container {   
+  height: 380px !important;
+  margin: auto;
+}
+
+.check-box-container{
+  height: 100px; 
+  overflow-y: scroll;
+}
+
+.datetime-container{
+  height: 100px; 
+  overflow-y: scroll;
+}
+
+.graph-container {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation-duration: .5s;
+  margin: auto;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.toast {
+  z-index: 99 !important;
+}
+
+.loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgb(223,27,22);
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  vertical-align: middle;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  text-align: center;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.sort-presets {
+  text-align: center;
+}
+
+
+.preset-button:hover{
+  display: inline-block; 
+  background-color: darkgrey !important;
+  border-color: white;
+}
+
+.date-row {
+  text-align: center;
+}
+
+.date-row p {
+  display: inline-block;
+}
+
+.card {
+  margin-top: 20px;
+  min-width: 140px;
+  height: 4rem;
+}
+
+.square {
+  margin-right: 5px; 
+  height: 17px;
+  width: 17px; 
+  border-radius: 35%; 
+}
+
+.toast {
+  width: 100%; 
+  height: 80px;
+  position: absolute; 
+  top: 10px; 
+  right: 5%; 
+  left: 1%;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog { max-width: none; }
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 92%;
+}
+
+.modal-content {
+  height: 99%;
+}
+
+.modal-body {
+  /* 100% = dialog height, 120px = header + footer */
+  max-height: calc(100% - 120px);
+  overflow-y: scroll;
+}
+
+.graph-header{
+  text-align: center;
+}
+
+.preset-button{
+  margin-bottom: 5px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.preset-button:hover{
+  display: inline-block; 
+  background-color: darkgrey !important;
+  border-color: white;
+}
+
+

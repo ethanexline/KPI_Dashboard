@@ -1,0 +1,108 @@
+.clock 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 3rem;
+  font-family: arial;
+  letter-spacing: 7px;
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+  min-height: 114px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover  {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.col {
+  min-width: 375px !important;
+  padding-bottom: 10px;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  margin: auto;
+}
+
+.p-3 {
+  text-align: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.row {
+  margin: 5px;
+}
+
+.table {
+  border: 2px solid white;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#news-ribbon{
+  background-color: #131722; 
+  height: 50px;
+  width: 100%;
+  margin: auto;
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden !important;
+}
+
+.news-ribbon-marquee{
+  display: inline-flex;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden !important;
+}
+
+.marquee-wrapper {
+  display: inline-flex;
+  height: 100%;
+  white-space: nowrap;
+  animation: marquee 110s linear infinite;
+  overflow: hidden;
+}
+
+.marquee-wrapper:hover {
+  height: 100%;
+  white-space: nowrap;
+  animation-play-state: paused;
+  overflow: hidden;
+}
+
+.news-ribbon-elements{
+  display: inline-block; 
+  vertical-align: middle;
+  height: 100%;
+  line-height: 3;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #ccc;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  overflow: hidden;
+}
+
+.news-ribbon-element-body{
+  margin-top: -20px;
+  text-align: center;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
